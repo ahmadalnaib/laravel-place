@@ -15,6 +15,7 @@ class CreatePlacesTable extends Migration
     {
         Schema::create('places', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->string('slug')->unique();
             $table->string('image')->default('default.png');
             $table->integer('category_id');
@@ -23,7 +24,7 @@ class CreatePlacesTable extends Migration
             $table->integer('user_id');
             $table->double('latitude');
             $table->double('longitude');
-            $table->integer('view_count')->default(0);
+            $table->integer('view_count')->default(1);
             $table->timestamps();
         });
     }

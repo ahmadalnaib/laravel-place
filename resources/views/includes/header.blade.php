@@ -19,3 +19,16 @@
 </form>
 
 
+<section class="m-auto text-center">
+  <div class="category mt-5">
+    <ul class="md:flex-grow mr-8 mt-2 flex items-center justify-center flex-wrap">
+      @foreach ($categories  as $category)
+          <li class="">
+            <a class="inline-block mr-2 tracking-wide text-indigo-500 text-l font-medium title-font py-0.5 px-1.5 border border-indigo-500" href="">{{$category->title}}</a>
+          </li>
+      @endforeach
+    </ul>
+  </div>
+</section>
+
+
