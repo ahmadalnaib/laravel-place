@@ -1,0 +1,27 @@
+{
+  "Login":"دخول",
+  "Register":"تسجيل",
+  "Logout":"خروج",
+  "E-Mail Address":"عنوان البريد الالكتروني",
+  "Password":"كلمة البريد",
+  "Remember me":"تذكر كلمة الدخول",
+  "Forgot your password":" هل نسيت كلمة المرور؟",
+  "Already registered?":"مسجل مسبقا؟",
+  "Name":"اسم المستخدم",
+  "Confirm Password":"تاكيد كلمة المرور",
+  "Reset Password Reset Link":"اعادة تعيين كلمة المرور",
+  "Verify Your Email Address":"ارسل رابط استعادة كلمة المرور",
+  "link has been send":"تم ارسال رابط التحقق الى عنوان بريدك الالكتروني",
+  "Before proceeding":"قبل المتابعة يرجى التحقق من بريدك الالكتروني للحصول على رابط التحقق",
+  "If you did not receive":"اذا لم تستلم البريد الالكتروني",
+  "click here":"فانقر هنا لاعادة الطلب",
+  "Owner":"صاحب عمل",
+  "User":"مستخدم عادي",
+  "Dashboard":"لوحة التحكم",
+  "Manage Account":"ادارة الحساب",
+  "Profile":"الصفحة الشخصية",
+  "Save":"حفظ",
+  "Saved":"تم الحفظ"
+
+
+}

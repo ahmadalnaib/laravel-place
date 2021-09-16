@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-indigo-900 border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -18,6 +18,15 @@
                 </div>
             </div>
 
+           @guest
+           <div class="flex">
+               <x-jet-nav-link href="{{route('login')}}" class="ml3">{{__('Login')}}</x-jet-nav-link>
+               <x-jet-nav-link href="{{route('register')}}" class="ml3">{{__('Register')}}</x-jet-nav-link>
+           </div>
+           @endguest
+
+           
+      @auth
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <!-- Teams Dropdown -->
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
@@ -214,4 +223,5 @@
             </div>
         </div>
     </div>
+    @endauth
 </nav>
