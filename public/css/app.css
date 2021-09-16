@@ -1287,8 +1287,29 @@ select {
 .h-20 {
 	height: 5rem;
 }
+.h-auto {
+	height: auto;
+}
+.h-screen {
+	height: 100vh;
+}
+.h-3 {
+	height: 0.75rem;
+}
+.h-4\/5 {
+	height: 80%;
+}
+.h-full {
+	height: 100%;
+}
+.max-h-full {
+	max-height: 100%;
+}
 .min-h-screen {
 	min-height: 100vh;
+}
+.min-h-full {
+	min-height: 100%;
 }
 .w-5 {
 	width: 1.25rem;
@@ -1355,6 +1376,9 @@ select {
 }
 .flex-auto {
 	flex: 1 1 auto;
+}
+.flex-none {
+	flex: none;
 }
 .flex-shrink-0 {
 	flex-shrink: 0;
