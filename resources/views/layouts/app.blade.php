@@ -12,11 +12,13 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
         @livewireStyles
-
+        
         <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        
+        
+        
+
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
@@ -36,11 +38,38 @@
             <!-- Page Content -->
             <main>
                 {{ $slot }}
+
+                
             </main>
         </div>
 
         @stack('modals')
 
         @livewireScripts
+        <script src="{{ mix('js/app.js') }}" ></script>
+           
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+          $(function(){
+             
+            $('#address').on('keyup',function(){
+                  const address=$(this).val()
+                  $('#address-list').fadeIn();
+                  $.ajax({
+                      url: "{{route('auto')}}",
+                      type: "GET",
+                      data: {"address":address}
+                  }).done(function(data){
+                      $('#address-list').html(data);
+                  })
+              })
+
+              $("#address-list").on('click','li',function(){
+                  $('#address').val($(this).text());
+                  $('#address-list').fadeOut();
+              })
+          })
+         </script>
+      
     </body>
 </html>
